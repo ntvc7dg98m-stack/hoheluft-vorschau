@@ -258,7 +258,6 @@ footer{border-top-color:var(--be)}
 @media(max-width:640px){.slide .cap,.slide.r .cap{left:50%;right:auto;bottom:36px}.slide::after,.slide.r::after{background:linear-gradient(0deg,rgb(0 0 0/.45),rgb(0 0 0/0) 65%)}}
 @media(max-width:640px){.slide .cap,.slide.r .cap{bottom:44px}}
 .top{border-bottom:3px solid var(--be)}
-.top{border-top:3px solid var(--be)}
 details.lang summary{border:2px solid var(--be);font-weight:500}
 
 .biglogo{display:none}
