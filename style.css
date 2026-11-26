@@ -247,3 +247,13 @@ footer{border-top-color:var(--be)}
 .slide .cap{z-index:1}
 .cap span{font-weight:600;color:var(--be)}
 @media(max-width:640px){.slide::after,.slide.r::after{background:linear-gradient(0deg,rgb(255 255 255/.6),rgb(255 255 255/0) 70%)}}
+
+/* Slider-Text wie auf der bisherigen Seite: weiß, mittig, mit Schatten und Pinselstrich */
+.slide .cap,.slide.r .cap{left:50%;right:auto;transform:translateX(-50%);text-align:center;width:min(920px,90%);max-width:none;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;padding:0;bottom:clamp(40px,7vw,100px)}
+.cap b{color:#fff;font-weight:400;font-size:clamp(28px,4.4vw,54px);text-shadow:0 2px 4px rgb(0 0 0/.55),0 0 18px rgb(0 0 0/.35)}
+.cap span{color:#fff;font-weight:400;font-size:clamp(16px,1.9vw,24px);text-shadow:0 1px 3px rgb(0 0 0/.6),0 0 12px rgb(0 0 0/.4)}
+.swoosh{display:block;width:min(70%,520px);height:clamp(12px,1.6vw,20px);margin:4px auto 10px;overflow:visible}
+.swoosh path{fill:none;stroke:var(--be);stroke-width:3.5;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.slide::after,.slide.r::after{background:linear-gradient(0deg,rgb(0 0 0/.38),rgb(0 0 0/0) 55%)}
+@media(max-width:640px){.slide .cap,.slide.r .cap{left:50%;right:auto;bottom:36px}.slide::after,.slide.r::after{background:linear-gradient(0deg,rgb(0 0 0/.45),rgb(0 0 0/0) 65%)}}
+@media(max-width:640px){.slide .cap,.slide.r .cap{bottom:44px}}
