@@ -191,3 +191,30 @@ main:focus{outline:none}
 .grid.g4 .ico{width:52px;height:52px;margin-bottom:6px}
 .reasons{gap:8px}.reasons li{font-size:15px}
 }
+
+/* Sprachen */
+details.lang{position:relative}
+details.lang summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;min-height:44px;padding:8px 12px;border-radius:999px;color:var(--be);border:1.5px solid var(--line);font-size:15px}
+details.lang summary::-webkit-details-marker{display:none}
+details.lang nav{position:absolute;inset-inline-end:0;top:52px;background:#fff;border-radius:14px;padding:8px;display:grid;min-width:180px;box-shadow:0 14px 30px rgb(0 0 0/.15);z-index:50}
+details.lang nav a{padding:10px 14px;color:var(--be);text-decoration:none;border-radius:10px}
+details.lang nav a:hover,details.lang nav a[aria-current]{background:var(--alt)}
+@media(max-width:1060px){details.lang{margin-inline-start:auto}details.lang+details.menu{margin-left:8px}}
+.checks li{padding-left:0;padding-inline-start:30px}
+.checks li::before{left:auto;inset-inline-start:0}
+@media(min-width:641px){[dir=rtl] .side a{border-radius:0 30px 30px 0}
+[dir=rtl] .side{right:auto;left:0}
+[dir=rtl] .side a{transform:translateX(calc(-100% + 64px))}
+[dir=rtl] .side a:hover,[dir=rtl] .side a:focus-visible{transform:none}}
+[dir=rtl] body{font-family:"Segoe UI",Tahoma,"Ubuntu",system-ui,sans-serif}
+.steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:12px;margin:22px 0}
+.steps li{counter-increment:s;padding-inline-start:52px;position:relative;min-height:38px;padding-top:6px}
+.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--be);color:#fff;display:grid;place-items:center;font-weight:500}
+table.types{width:100%;border-collapse:collapse;font-size:16px}
+.types th,.types td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top}
+.types th{color:var(--be);font-weight:500}
+.types td:first-child{color:var(--soft);font-size:15px;width:45%}
+@media(max-width:560px){.types thead{display:none}.types tr{display:grid;padding:10px 0;border-bottom:1px solid var(--line)}.types td{border:0;padding:2px 0;width:auto!important}}
+
+.lnav{display:flex;gap:6px;flex-wrap:wrap}.lnav a{color:var(--be);text-decoration:none;font-size:18px;padding:10px}
+@media(max-width:760px){.lnav{display:none}}
