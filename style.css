@@ -262,3 +262,4 @@ details.lang summary{border:2px solid var(--be);font-weight:500}
 
 .biglogo{display:none}
 @media(max-width:760px){.biglogo{display:block;padding:34px 0 6px}.biglogo img{width:min(78%,360px);margin:0 auto}}
+details.menu summary,details.lang summary{border:0!important}
