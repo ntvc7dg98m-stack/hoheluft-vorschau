@@ -181,3 +181,13 @@ main:focus{outline:none}
 @media(max-width:900px){.reasons{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.reasons{grid-template-columns:1fr}}
 
 .two.top{align-items:start}
+
+/* Handy: Behandlungen kompakt, 12 Gründe enger */
+@media(max-width:560px){
+.grid.g4{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.grid.g4 .feat{padding:14px 8px}
+.grid.g4 .feat p{display:none}
+.grid.g4 .feat h3{font-size:15px;margin:0}
+.grid.g4 .ico{width:52px;height:52px;margin-bottom:6px}
+.reasons{gap:8px}.reasons li{font-size:15px}
+}
