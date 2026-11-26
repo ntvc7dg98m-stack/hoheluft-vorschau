@@ -267,10 +267,14 @@ details.menu summary,details.lang summary{border:0!important}
 /* Slider-Text baut sich auf wie im Original: Schrift gleitet herein, Pinselstrich zeichnet sich */
 @media(prefers-reduced-motion:no-preference){
 .slide .cap b,.slide .cap span{opacity:0;transform:translateY(28px)}
-.slide.on .cap b{animation:capIn .9s cubic-bezier(.2,.7,.2,1) .35s forwards}
-.slide.on .cap span{animation:capIn .9s cubic-bezier(.2,.7,.2,1) 1.5s forwards}
+.slide.on .cap b{animation:capIn .9s cubic-bezier(.2,.7,.2,1) 3s forwards}
+.slide.on .cap span{animation:capIn .9s cubic-bezier(.2,.7,.2,1) 4.2s forwards}
 .slide .swoosh{clip-path:inset(0 100% 0 0)}
-.slide.on .swoosh{animation:draw .9s ease-out 1s forwards}
+.slide.on .swoosh{animation:draw .9s ease-out 3.65s forwards}
 }
 @keyframes capIn{to{opacity:1;transform:none}}
 @keyframes draw{to{clip-path:inset(0 0 0 0)}}
+
+/* Pause-Knopf nur für Tastatur sichtbar */
+.dots .pause{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);margin:0;padding:0;border:0}
+.dots .pause:focus-visible{position:static;width:auto;height:24px;clip:auto;padding:0 9px;border:2px solid #fff}
