@@ -5,16 +5,17 @@ PICTURE: großer Foto-Slider über die volle Breite, wie bisher
 COLOUR: Weiß als Grund, Beere aus dem Logo für Menü, Überschriften und Knöpfe, Ballonfarben als Tupfer
 TYPE/LAYOUT: leichte, runde Systemschrift wie der Logo-Schriftzug; Menü zentriert, Inhalte mittig, max. 1140px
 */
-:root{--bg:#fff;--alt:#f6f4f1;--ink:#4a4a4a;--soft:#6e6e6e;--be:#a3195b;--be2:#8a1450;--line:#e7e2dc;--card:#fff}
+:root{--bg:#fff;--alt:#f6f4f1;--ink:#4a4a4a;--soft:#6e6e6e;--be:#8d245a;--be2:#741c4a;--line:#e7e2dc;--card:#fff}
 *{box-sizing:border-box;min-width:0}
 html{scroll-padding-top:110px}
-@font-face{font-family:"Ubuntu";src:url(fonts/ubuntu-light.woff) format("woff");font-weight:300;font-display:swap}
-@font-face{font-family:"Ubuntu";src:url(fonts/ubuntu-regular.woff) format("woff");font-weight:400;font-display:swap}
-@font-face{font-family:"Ubuntu";src:url(fonts/ubuntu-medium.woff) format("woff");font-weight:500;font-display:swap}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Ubuntu","Segoe UI",system-ui,sans-serif;font-weight:400;overflow-x:clip}
+@font-face{font-family:"Open Sans";src:url(fonts/opensans-300.woff) format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"Open Sans";src:url(fonts/opensans-400.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Open Sans";src:url(fonts/opensans-600.woff) format("woff");font-weight:600;font-display:swap}
+@font-face{font-family:"Open Sans";src:url(fonts/opensans-700.woff) format("woff");font-weight:700;font-display:swap}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Open Sans","Segoe UI",system-ui,sans-serif;font-weight:400;overflow-x:clip}
 img{max-width:100%;height:auto;display:block}
 a{color:var(--be)}
-h1,h2,h3{line-height:1.15;text-wrap:balance;margin:0 0 .5em;color:var(--be);font-weight:500}
+h1,h2,h3{line-height:1.2;text-wrap:balance;margin:0 0 .5em;color:var(--be);font-weight:400}
 h1{font-size:clamp(32px,4.4vw,46px)}
 h2{font-size:clamp(26px,3.2vw,36px)}
 h3{font-size:21px}
@@ -206,7 +207,7 @@ details.lang nav a:hover,details.lang nav a[aria-current]{background:var(--alt)}
 [dir=rtl] .side{right:auto;left:0}
 [dir=rtl] .side a{transform:translateX(calc(-100% + 64px))}
 [dir=rtl] .side a:hover,[dir=rtl] .side a:focus-visible{transform:none}}
-[dir=rtl] body{font-family:"Segoe UI",Tahoma,"Ubuntu",system-ui,sans-serif}
+[dir=rtl] body{font-family:"Segoe UI",Tahoma,"Open Sans",system-ui,sans-serif}
 .steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:12px;margin:22px 0}
 .steps li{counter-increment:s;padding-inline-start:52px;position:relative;min-height:38px;padding-top:6px}
 .steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--be);color:#fff;display:grid;place-items:center;font-weight:500}
@@ -221,3 +222,17 @@ table.types{width:100%;border-collapse:collapse;font-size:16px}
 
 .pic.tall img{aspect-ratio:4/3.4}
 @media(min-width:821px){.pic.sticky{position:sticky;top:120px}}
+
+/* Termin-Block wie auf der bisherigen Seite */
+.berry{background:var(--be);color:#fff;text-align:center}
+.berry h2{color:#fff;text-transform:uppercase;font-weight:400;font-size:clamp(24px,3.4vw,36px);letter-spacing:.01em}
+.berry .tel{display:inline-flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font-weight:700;font-size:clamp(30px,5vw,48px);margin:10px 0 18px;white-space:nowrap}
+.berry .tel svg{width:.9em;height:.9em;flex:none}
+.berry p{font-weight:300;font-size:clamp(18px,2vw,22px);margin:0 auto 14px;max-width:640px}
+.berry b{font-weight:600}
+.berry .cta{justify-content:center;margin-top:26px}
+.btn.white{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff;border-radius:6px;font-weight:300;font-size:19px}
+.btn.white:hover{background:rgb(255 255 255/.12)}
+.copy{background:linear-gradient(90deg,#8d245a,#d47f56)}
+footer{border-top-color:var(--be)}
+@media(max-width:640px){.side a{font-size:15px;padding:12px 8px;gap:8px}.side svg{width:24px;height:24px}}
