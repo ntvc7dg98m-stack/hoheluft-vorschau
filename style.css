@@ -239,14 +239,5 @@ table.types{width:100%;border-collapse:collapse;font-size:16px}
 footer{border-top-color:var(--be)}
 @media(max-width:640px){.side a{font-size:15px;padding:12px 8px;gap:8px}.side svg{width:24px;height:24px}}
 
-/* Knöpfe mit Farbverlauf wie im Fußstreifen */
-:root{--grad:linear-gradient(90deg,#8d245a,#b85c3c)}
-.btn{background:var(--grad);border:2px solid #fff;box-shadow:0 0 0 2px #8d245a}
-.btn:hover{background:linear-gradient(90deg,#741c4a,#a84f34)}
-.btn.line{background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#8d245a,#d47f56) border-box;border:2px solid transparent;box-shadow:none;color:var(--be)}
-.btn.line:hover{background:linear-gradient(#fdf3f7,#fdf3f7) padding-box,linear-gradient(90deg,#8d245a,#d47f56) border-box}
-.btn.white{background:transparent;border:2px solid #fff;box-shadow:none}
-.side a{background:var(--grad);border:2px solid #fff;border-right:0}
-[dir=rtl] .side a{border-right:2px solid #fff;border-left:0}
-@media(max-width:640px){.side a,.side a+a{background:var(--grad);border:2px solid #fff;border-radius:0}}
-.copy{background:var(--grad)}
+/* Behandlungs-Kacheln: Rahmen im Farbverlauf */
+.feat,.treat .card{border:2px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#8d245a,#d47f56) border-box}
