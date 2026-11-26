@@ -1,0 +1,35 @@
+/* Variante B: lila Balken oben statt Logo */
+.top{background:linear-gradient(90deg,#8d245a,#b85c3c);border-bottom:0;box-shadow:0 2px 10px rgb(0 0 0/.15)}
+.top .logo{display:none}
+.top .wrap{min-height:72px}
+nav.main a{color:#fff}
+nav.main a:hover,nav.main a[aria-current]{border-color:#fff}
+details.menu summary,details.lang summary{border-color:#fff;color:#fff}
+.lnav a{color:#fff}
+.biglogo{display:block;padding:40px 0 6px}
+.biglogo img{width:min(78%,420px);margin:0 auto}
+@media(max-width:1060px){.top .wrap{justify-content:flex-end;min-height:64px}details.lang{margin-inline-start:0}}
+html{scroll-padding-top:90px}
+.top .wrap{min-height:52px;gap:16px}
+nav.main a{padding:6px 10px;font-size:17px}
+details.menu summary,details.lang summary{min-height:36px;padding:4px 14px;font-size:15px}
+details.menu nav,details.lang nav{top:46px}
+@media(max-width:1060px){.top .wrap{min-height:50px}}
+html{scroll-padding-top:70px}
+/* Verlauf Lila -> Weiß: Praxisname weiß links, Bedienung lila rechts */
+.top{background:linear-gradient(90deg,#8d245a 0%,#8d245a 28%,#fff 72%)}
+.top .wrap{justify-content:space-between}
+.top .logo{display:block;text-decoration:none}
+.top .logo img{display:none}
+.top .logo::after{content:"Kinderzahnarztpraxis HoheLuft";color:#fff;font-size:20px;font-weight:400;white-space:nowrap}
+nav.main a{color:var(--be)}
+nav.main a:hover,nav.main a[aria-current]{border-color:var(--be)}
+details.menu summary,details.lang summary,.lnav a{border-color:var(--be);color:var(--be)}
+.lnav a{border:0}
+@media(max-width:1060px){.top{background:linear-gradient(90deg,#8d245a 0%,#8d245a 40%,#fff 88%)}.top .wrap{justify-content:flex-end}.top .logo{margin-right:auto}.top .logo::after{font-size:15px;white-space:normal;display:block;line-height:1.15;max-width:140px}}
+/* Lesbarkeit auf dem Verlauf: Bedienelemente auf weißem Grund */
+details.menu summary,details.lang summary{background:#fff}
+nav.main{gap:6px}
+nav.main a{background:rgb(255 255 255/.92);border-radius:999px;border-bottom:0;padding:5px 14px}
+nav.main a:hover,nav.main a[aria-current]{background:#fff;box-shadow:inset 0 0 0 2px var(--be)}
+@media(min-width:1061px){.top .logo::after{font-size:18px}.top{background:linear-gradient(90deg,#8d245a 0%,#8d245a 22%,#fff 80%)}}
