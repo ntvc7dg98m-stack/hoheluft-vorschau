@@ -162,3 +162,5 @@ footer h3{font-size:19px}
 .pgrid img{aspect-ratio:4/3;object-fit:cover;border-radius:20px;width:100%}
 .pgrid figcaption{text-align:center;font-size:15px;color:var(--soft);margin-top:8px}
 @media(max-width:900px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.ico{width:72px;height:72px;margin-bottom:10px}.feat .ico{margin:0 auto 10px}
