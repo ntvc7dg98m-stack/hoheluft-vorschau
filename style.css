@@ -12,7 +12,7 @@ html{scroll-padding-top:110px}
 @font-face{font-family:"Ubuntu";src:url(fonts/ubuntu-regular.woff) format("woff");font-weight:400;font-display:swap}
 @font-face{font-family:"Ubuntu";src:url(fonts/ubuntu-medium.woff) format("woff");font-weight:500;font-display:swap}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Ubuntu","Segoe UI",system-ui,sans-serif;font-weight:400;overflow-x:clip}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--be)}
 h1,h2,h3{line-height:1.15;text-wrap:balance;margin:0 0 .5em;color:var(--be);font-weight:500}
 h1{font-size:clamp(32px,4.4vw,46px)}
@@ -163,7 +163,7 @@ footer h3{font-size:19px}
 /* Praxisbilder */
 .pgrid{display:grid;gap:16px;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:22px}
 .pgrid figure{margin:0}
-.pgrid img{aspect-ratio:4/3;object-fit:cover;border-radius:20px;width:100%}
+.pgrid img{aspect-ratio:4/3;height:auto;object-fit:cover;border-radius:20px;width:100%}
 .pgrid figcaption{text-align:center;font-size:15px;color:var(--soft);margin-top:8px}
 @media(max-width:900px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
